@@ -16,7 +16,6 @@
 
 - [sort.js](./arrays/sort.js)
 - [sortFrequency.js](./arrays/sortFrequency.js)
-- [sortFrequency.js](./arrays/sortFrequency.js)
 - [zeroMatrix.js](./arrays/zeroMatrix.js)
 
 ## Linked Lists

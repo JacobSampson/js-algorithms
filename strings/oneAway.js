@@ -28,7 +28,6 @@ function oneAway(string1, string2) {
                 i--;
             }
             editsNeeded++;
-
         }
 
         if (editsNeeded > 1) {
