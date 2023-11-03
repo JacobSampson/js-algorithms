@@ -1,29 +1,29 @@
-(function() {
-    let array = [ 0, 82, 2, 23, 82, 8, 18, 18, 23, 82 ];
+(function () {
+  let array = [0, 82, 2, 23, 82, 8, 18, 18, 23, 82];
 
-    console.log(array);
+  console.log(array);
 
-    console.log(sortFrequency(array));
+  console.log(sortFrequency(array));
 })();
 
 function sortFrequency(array) {
-    let freq = {};
+  let freq = {};
 
-    for (let i = 0; i < array.length; ++i) {
-        if (freq[array[i]] != undefined) {
-            freq[array[i]]++;
-        } else {
-            freq[array[i]] = 1;
-        }
+  for (let i = 0; i < array.length; ++i) {
+    if (freq[array[i]] != undefined) {
+      freq[array[i]]++;
+    } else {
+      freq[array[i]] = 1;
     }
+  }
 
-    let sorted = [];
+  let sorted = [];
 
-    for (let entry in freq) {
-        for (let i = 0; i < freq[entry]; ++i) {
-            sorted.unshift(entry);
-        }
+  for (let entry in freq) {
+    for (let i = 0; i < freq[entry]; ++i) {
+      sorted.unshift(entry);
     }
+  }
 
-    return sorted;
+  return sorted;
 }

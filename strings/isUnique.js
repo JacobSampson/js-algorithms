@@ -1,17 +1,17 @@
 (() => {
-    // console.log(isUnique("abcdEFgAa"));
-    console.log(isUnique("fsdjlk"));
+  // console.log(isUnique("abcdEFgAa"));
+  console.log(isUnique("fsdjlk"));
 })();
 
 function isUnique(string) {
-    let chars = [];
+  let chars = [];
 
-    for (let char of string) {
-        if (chars.indexOf(char) !== -1) {
-            return false;
-        }
-        chars.push(char);
+  for (let char of string) {
+    if (chars.indexOf(char) !== -1) {
+      return false;
     }
+    chars.push(char);
+  }
 
-    return true;
+  return true;
 }
